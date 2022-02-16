@@ -5,6 +5,7 @@ import ProductInfo from './pages/ProductInfo';
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Cart from './pages/Cart';
+import People from './pages/People';
 
 function App() {
   
@@ -18,7 +19,7 @@ function App() {
           <Route path='/register' exact element={<Register/>} />
           <Route path='/cart' exact element={<Cart/>} />
           <Route path='/info' exact element={<ProductInfo/>} />
-
+          <Route path='/list' exact element={<People/>} />
 
         </Routes>
       </BrowserRouter>

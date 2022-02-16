@@ -1,7 +1,8 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { collection, addDoc, doc, setDoc, getDocs, query, where, getDocFromServer, orderBy, limit } from "firebase/firestore";
-import fireDB from "../fireconf";
+import { collection, addDoc, getDocs, query, where,  orderBy, limit } from "firebase/firestore";
+import {fireDB} from "../fireconf";
+
 
 function Homepage() {
   async function testAdd() {
@@ -52,6 +53,9 @@ function Homepage() {
         <button className="btn btn-success" onClick={testData}>
           Custom Test
         </button>
+        <br />
+        <br />   
+        <button className="btn  btn-light">Login with Google</button>     
       </Layout>
     </div>
   );

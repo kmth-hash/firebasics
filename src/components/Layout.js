@@ -6,7 +6,7 @@ function Layout(props) {
     <div>
       <Header></Header>
       <center>
-        <h1>{props.children}</h1>
+        <h1 className="text-light">{props.children}</h1>
       </center>
       <Footer></Footer>
     </div>
